@@ -6,7 +6,9 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+h2{
+  text-transform: uppercase;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -72,3 +74,79 @@
   box-sizing: border-box;
   float: right;
 }
+
+.usersList{
+  width: 800px;
+  margin: 0 auto;
+}
+
+.usersList table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.usersList td, .usersList th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.usersList td > span{
+  display: inline-block;
+  padding-left: 5px;
+}
+
+.usersList tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.userDetails{
+  width: 700px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+.userDetails .left{
+  width: 30%;
+}
+.userDetails .left > .profile-photo{
+  height: 100px;
+  width: 100px;
+  border: 1px solid #000000;
+}
+.userDetails .left > .profile-photo > .span{
+  text-align: center;
+}
+.userDetails .right{
+  width: 70%;
+}
+.userDetails .right .row{
+  display: flex;
+  padding-bottom: 10px;
+}
+.userDetails .right .row > .labelName{
+ width: 40%;
+}
+.userDetails .right .row > .labelValue{
+  width: 60%;
+ }
+
+ nav{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   min-height: 10vh;
+   background-color: rgb(32, 39, 41);
+   color: #ffffff;
+   padding: 0 20px;
+ }
+
+ nav ul{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   list-style: none;
+   width: 50%;
+ }

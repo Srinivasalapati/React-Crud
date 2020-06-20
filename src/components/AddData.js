@@ -11,7 +11,7 @@ const AddData = () => {
     const [value, setData] = useState(formInitialData)
     const submitForm = (e) =>{
         e.preventDefault()
-        console.log(e.target.value)
+        console.log(value)
     }
     return (
         <div className="add-form">
